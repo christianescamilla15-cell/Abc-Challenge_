@@ -1,20 +1,11 @@
-// Colores permitidos
-const colors = ["green", "blue", "red"];
+document.addEventListener("DOMContentLoaded", function () {
+  const colors = ["green", "blue", "red"];
+  const headings = document.querySelectorAll("h5");
 
-// Seleccionar todos los h5
-const headings = document.querySelectorAll("h5");
-
-// Agregar evento de clic
-headings.forEach(function(h5){
-
-h5.addEventListener("click", function(){
-
-// elegir color aleatorio
-const randomColor = colors[Math.floor(Math.random() * colors.length)];
-
-// aplicar color
-h5.style.color = randomColor;
-
-});
-
+  headings.forEach(function (h5) {
+    h5.addEventListener("click", function () {
+      const randomColor = colors[Math.floor(Math.random() * colors.length)];
+      h5.style.color = randomColor;
+    });
+  });
 });
