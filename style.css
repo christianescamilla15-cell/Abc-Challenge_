@@ -1,0 +1,25 @@
+body{
+  background-color: gray;
+}
+
+h3{
+  color: green;
+}
+
+.blueText{
+  color: blue;
+}
+
+.redText{
+  color: red;
+}
+
+img{
+  width: 250px;
+  height: auto;
+  display: block;
+}
+
+.row{
+  margin: 20px 0;
+}
